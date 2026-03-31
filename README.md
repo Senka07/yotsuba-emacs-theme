@@ -4,6 +4,10 @@ A light color theme for Emacs inspired by the **Yotsuba** aesthetic of the 4chan
 
 This theme maps the original CSS palette to Emacs faces, providing a environment for programmers and writers who appreciate the "old web" design.
 
+## Screenshots
+
+![Yotsuba Theme Preview](img/yotsuba.png)
+
 ## Features
 
 - **Authentic Palette:** Uses the exact hex codes (#FFFFEE, #F0E0D6, #800000) from the original site.
@@ -23,3 +27,4 @@ This theme maps the original CSS palette to Emacs faces, providing a environment
 ```elisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'yotsuba t)
+
