@@ -19,12 +19,30 @@ This theme maps the original CSS palette to Emacs faces, providing a environment
 
 ## Installation
 
-### Manual
-1. Download `yotsuba-theme.el`.
-2. Move it to your `~/.emacs.d/themes/` directory.
-3. Add the following to your `init.el` or `.emacs`:
+### Manual Installation
+
+1. Clone the repository to your themes directory:
+   ```bash
+   git clone [https://github.com/Senka07/yotsuba-emacs-theme.git](https://github.com/Senka07/yotsuba-emacs-theme.git) ~/.emacs.d/themes/
+
+    Add the following to your init.el:
+    
+
+    ;; Add the theme directory to load-path
+    (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+
+    ;; Load the theme:
+    (load-theme 'yotsuba t)
+    
+
+### Installation via use-package (Straight.el / Quelpa)
+
+If you use straight.el or quelpa, add this to your configuration:
 
 ```elisp
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'yotsuba t)
+(use-package yotsuba-theme
+  :straight (:host github :repo "Senka07/yotsuba-emacs-theme")
+  :init
+  (load-theme 'yotsuba t))
+```
 
