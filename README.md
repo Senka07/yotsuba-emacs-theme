@@ -7,6 +7,7 @@ This theme maps the original CSS palette to Emacs faces, providing a environment
 ## Screenshots
 
 ![Yotsuba Theme Preview](img/yotsuba.png)
+![Yotsuba B Theme Preview](img/yotsuba_b.png)
 
 ## Features
 
