@@ -30,7 +30,7 @@
    `(mode-line ((t (:background ,yotsuba-post :foreground ,yotsuba-subject :box (:line-width 1 :color ,yotsuba-border)))))
    `(mode-line-inactive ((t (:background ,yotsuba-bg :foreground ,yotsuba-grey :box (:line-width 1 :color ,yotsuba-post)))))
    `(minibuffer-prompt ((t (:foreground ,yotsuba-subject :weight bold))))
-   
+
    ;; Font-Lock (Syntax Highlighting)
    `(font-lock-comment-face ((t (:foreground ,yotsuba-green)))) ; Comments as Greentext
    `(font-lock-doc-face ((t (:foreground ,yotsuba-green :slant italic))))
@@ -53,7 +53,12 @@
 
    ;; Line numbers
    `(line-number ((t (:foreground ,yotsuba-border :background ,yotsuba-bg))))
-   `(line-number-current-line ((t (:foreground ,yotsuba-subject :background ,yotsuba-post))))))
+   `(line-number-current-line ((t (:foreground ,yotsuba-subject :background ,yotsuba-post))))
+
+   ;; tab-bar-mode
+   `(tab-bar ((t (:inherit default :background ,yotsuba-post :foreground ,yotsuba-grey))))
+   `(tab-bar-tab ((t (:background ,yotsuba-bg :foreground ,yotsuba-grey :weight bold))))
+   `(tab-bar-tab-inactive ((t (:background ,yotsuba-post :foreground ,yotsuba-grey))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
